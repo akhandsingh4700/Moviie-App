@@ -2,7 +2,8 @@
 import React, { Component } from 'react';
 import TopBar from './Component/TopBar'
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import Card from './Component/Card'
+import "./App.css";
 
 class App extends Component {
   constructor(props) {
@@ -12,7 +13,8 @@ class App extends Component {
   render() { 
     return ( <div>
       <TopBar/>
-     <h1>App Component</h1>
+      <p className ="heading">Movies<hr/></p>
+     <Card/>
     </div> );
   }
 }
